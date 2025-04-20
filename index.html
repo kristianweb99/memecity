@@ -1,75 +1,58 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MimiRed</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-color: #000000;
-      color: #ffffff;
-      font-family: 'Arial', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
       text-align: center;
     }
-
+    .container {
+      padding: 50px 20px;
+    }
     h1 {
       font-size: 3em;
-      color: #00ffcc;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      color: #00ffea;
     }
-
     p {
       font-size: 1.2em;
-      color: #ccc;
       margin-bottom: 30px;
+      color: #aaa;
     }
-
-    .button {
-      background-color: #00ffcc;
-      color: #000;
-      border: none;
+    .btn {
       padding: 15px 30px;
-      font-size: 1em;
-      border-radius: 10px;
-      cursor: pointer;
       margin: 10px;
-      transition: background 0.3s;
+      font-size: 1em;
+      background-color: #00ffea;
+      border: none;
+      border-radius: 10px;
+      color: black;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
-
-    .button:hover {
-      background-color: #00ddaa;
+    .btn:hover {
+      background-color: #00bfa8;
     }
-
-    .paypal-button {
-      background-color: #0070ba;
-      color: white;
-    }
-
-    .paypal-button:hover {
-      background-color: #005c99;
+    .paypal {
+      background-color: #ffc439;
+      color: #111;
     }
   </style>
+  <!-- Código de anuncio de Adsterra (ejemplo de banner display) -->
+  <script type='text/javascript' src='//pl20251366.profitablegatecpm.com/46/71/26/46712646c611d64adbf51c9d4ccf0cfb.js'></script>
 </head>
 <body>
-  <h1>MimiRed</h1>
-  <p>Tu mini red de conexión rápida. ¡Gracias por visitarnos!</p>
-
-  <button class="button" onclick="window.location.href='https://www.profitableratecpm.com/v6maqc8b?key=50a89101f90c29b2f837307d6687be74'">
-    Entrar
-  </button>
-
-  <form action="https://www.paypal.com/donate" method="post" target="_blank">
-    <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
-    <input type="hidden" name="business" value="kristianmemo756@gmail.com">
-    <input type="hidden" name="currency_code" value="USD">
-    <button type="submit" class="button paypal-button">Donar con PayPal</button>
-  </form>
+  <div class="container">
+    <h1>Bienvenido a MimiRed</h1>
+    <p>Tu espacio para memes, videos y diversión</p>
+    <button class="btn" onclick="window.location.href='inicio.html'">Entrar</button>
+    <button class="btn paypal" onclick="window.open('https://www.paypal.me/tulink', '_blank')">Donar con PayPal</button>
+  </div>
 </body>
 </html>
