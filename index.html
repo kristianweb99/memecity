@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MimiRed</title>
   <style>
     body {
       background-color: #000;
-      color: white;
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
+      color: #fff;
+      font-family: Arial, sans-serif;
       text-align: center;
+      padding: 50px 20px;
     }
+
     h1 {
-      color: #00ffcc;
-      font-size: 3em;
-      margin-bottom: 0.2em;
+      color: #00ffc3;
+      font-size: 48px;
     }
+
     p {
-      font-size: 1.2em;
-      margin: 0 20px 2em;
+      font-size: 18px;
+      color: #ccc;
+      margin-bottom: 30px;
     }
-    .button {
-      padding: 12px 24px;
-      font-size: 1.1em;
-      border: none;
-      border-radius: 10px;
+
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: bold;
       margin: 10px;
+      border: none;
+      border-radius: 12px;
       cursor: pointer;
+      transition: 0.3s ease;
+      text-decoration: none;
     }
-    .entrar {
-      background-color: #00ffcc;
+
+    .btn-entrar {
+      background-color: #00ffc3;
       color: #000;
     }
-    .paypal {
-      background-color: #0070ba;
-      color: #fff;
+
+    .btn-entrar:hover {
+      background-color: #00cfa0;
     }
-    .paypal:hover {
-      background-color: #005c9e;
+
+    .btn-paypal {
+      background-color: #0070ba;
+      color: white;
+    }
+
+    .btn-paypal:hover {
+      background-color: #005c99;
     }
   </style>
 </head>
@@ -52,15 +61,13 @@
   <h1>MimiRed</h1>
   <p>Tu mini red de conexión rápida.<br>¡Gracias por visitarnos!</p>
 
-  <button class="button entrar" onclick="window.location.href='https://kristianweb99.github.io/memecity'">Entrar</button>
-
-  <!-- PayPal Donación funcional -->
-  <a href="https://www.paypal.com/donate/?business=kristianmemo756@gmail.com&currency_code=USD" target="_blank">
-    <button class="button paypal">Donar con PayPal</button>
+  <a class="btn btn-entrar" href="#">Entrar</a>
+  <a class="btn btn-paypal" href="https://www.paypal.com/donate/?hosted_button_id=Y7MFZ54Z3PB5A" target="_blank">
+    Donar con PayPal
   </a>
 
-  <!-- Script de anuncio Adsterra -->
-  <script type="text/javascript" src="//pl26436106.profitableratecpm.com/fd/32/6c/fd326ce130c925da332027d5ef17d2fa.js"></script>
+  <!-- Código de anuncios Profitableratecpm -->
+  <script type='text/javascript' src='//pl26436106.profitableratecpm.com/fd/32/6c/fd326ce130c925da332027d5ef17d2fa.js'></script>
 
 </body>
 </html>
