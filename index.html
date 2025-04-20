@@ -1,58 +1,74 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MimiRed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MemeCity</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #000;
-      color: white;
-      font-family: Arial, sans-serif;
+      color: #fff;
       text-align: center;
     }
-    .container {
-      padding: 50px 20px;
+    .hero {
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #00f, #0ff);
     }
     h1 {
-      font-size: 3em;
+      font-size: 48px;
       margin-bottom: 20px;
-      color: #00ffea;
     }
     p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-      color: #aaa;
+      font-size: 20px;
+      margin-bottom: 40px;
     }
-    .btn {
+    .button {
       padding: 15px 30px;
       margin: 10px;
-      font-size: 1em;
-      background-color: #00ffea;
+      font-size: 18px;
       border: none;
       border-radius: 10px;
-      color: black;
       cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .btn:hover {
-      background-color: #00bfa8;
+      transition: 0.3s;
     }
     .paypal {
       background-color: #ffc439;
-      color: #111;
+      color: #000;
+    }
+    .paypal:hover {
+      background-color: #ffdd66;
+    }
+    .entrar {
+      background-color: #111;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+    .entrar:hover {
+      background-color: #333;
     }
   </style>
-  <!-- Código de anuncio de Adsterra (ejemplo de banner display) -->
-  <script type='text/javascript' src='//pl20251366.profitablegatecpm.com/46/71/26/46712646c611d64adbf51c9d4ccf0cfb.js'></script>
 </head>
 <body>
-  <div class="container">
-    <h1>Bienvenido a MimiRed</h1>
-    <p>Tu espacio para memes, videos y diversión</p>
-    <button class="btn" onclick="window.location.href='inicio.html'">Entrar</button>
-    <button class="btn paypal" onclick="window.open('https://www.paypal.me/tulink', '_blank')">Donar con PayPal</button>
+  <div class="hero">
+    <h1>Bienvenido a MemeCity</h1>
+    <p>Tu red social de memes, humor y diversión</p>
+
+    <!-- Botón de PayPal -->
+    <form action="https://www.paypal.com/donate" method="post" target="_blank">
+      <input type="hidden" name="business" value="kristianmemo756@gmail.com" />
+      <input type="hidden" name="currency_code" value="USD" />
+      <button class="button paypal" type="submit">Donar con PayPal</button>
+    </form>
+
+    <!-- Botón de Entrar -->
+    <a href="inicio.html">
+      <button class="button entrar">Entrar</button>
+    </a>
   </div>
+
+  <!-- Script de anuncios Adsterra -->
+  <script type='text/javascript' src='//pl26436106.profitableratecpm.com/fd/32/6c/fd326ce130c925da332027d5ef17d2fa.js'></script>
 </body>
 </html>
