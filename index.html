@@ -7,60 +7,58 @@
   <style>
     body {
       background-color: #000;
-      color: white;
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
+      color: #00ffe0;
+      font-family: Arial, sans-serif;
       text-align: center;
+      padding: 80px 20px;
     }
     h1 {
-      color: #00ffcc;
-      font-size: 3em;
-      margin-bottom: 0.2em;
+      font-size: 48px;
+      margin-bottom: 20px;
     }
     p {
-      font-size: 1.2em;
-      margin: 0 20px 2em;
+      font-size: 18px;
+      color: #ccc;
+      margin-bottom: 40px;
     }
-    .button {
-      padding: 12px 24px;
-      font-size: 1.1em;
-      border: none;
-      border-radius: 10px;
+    .btn {
+      display: inline-block;
       margin: 10px;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 10px;
+      border: none;
       cursor: pointer;
+      transition: background 0.3s ease;
     }
-    .entrar {
-      background-color: #00ffcc;
+    .btn-entrar {
+      background-color: #00ffc3;
       color: #000;
     }
-    .paypal {
-      background-color: #0070ba;
-      color: #fff;
+    .btn-entrar:hover {
+      background-color: #00d4a7;
     }
-    .paypal:hover {
-      background-color: #005c9e;
+    .btn-paypal {
+      background-color: #0070ba;
+      color: white;
+    }
+    .btn-paypal:hover {
+      background-color: #005c99;
     }
   </style>
 </head>
 <body>
-
   <h1>MimiRed</h1>
   <p>Tu mini red de conexión rápida.<br>¡Gracias por visitarnos!</p>
+  <a href="https://kristianweb99.github.io/memecity" class="btn btn-entrar">Entrar</a><br>
+  <form action="https://www.paypal.com/donate" method="post" target="_blank">
+    <input type="hidden" name="business" value="kristianmemo756@gmail.com" />
+    <input type="hidden" name="no_recurring" value="0" />
+    <input type="hidden" name="currency_code" value="USD" />
+    <button class="btn btn-paypal" type="submit">Donar con PayPal</button>
+  </form>
 
-  <button class="button entrar" onclick="window.location.href='https://kristianweb99.github.io/memecity'">Entrar</button>
-
-  <!-- PayPal Donación funcional -->
-  <a href="https://www.paypal.com/donate/?business=kristianmemo756@gmail.com&currency_code=USD" target="_blank">
-    <button class="button paypal">Donar con PayPal</button>
-  </a>
-
-  <!-- Script de anuncio Adsterra -->
-  <script type="text/javascript" src="//pl26436106.profitableratecpm.com/fd/32/6c/fd326ce130c925da332027d5ef17d2fa.js"></script>
-
+  <!-- CÓDIGO DE ANUNCIO DE ADSTERRA -->
+  <script type='text/javascript' src='//pl26436106.profitableratecpm.com/fd/32/6c/fd326ce130c925da332027d5ef17d2fa.js'></script>
 </body>
 </html>
