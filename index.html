@@ -1,96 +1,75 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Red Viral</title>
+  <title>MimiRed</title>
   <style>
     body {
       margin: 0;
-      font-family: sans-serif;
-      background: #000;
-      color: #fff;
-    }
-    header {
-      background: #1e1e1e;
-      padding: 1rem;
+      padding: 0;
+      background-color: #000000;
+      color: #ffffff;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
-      font-size: 1.5rem;
-      color: #0ff;
     }
-    .container {
-      padding: 1rem;
+
+    h1 {
+      font-size: 3em;
+      color: #00ffcc;
+      margin-bottom: 10px;
     }
-    .card {
-      background: #111;
-      border: 1px solid #333;
-      border-radius: 10px;
-      margin: 1rem 0;
-      padding: 1rem;
+
+    p {
+      font-size: 1.2em;
+      color: #ccc;
+      margin-bottom: 30px;
     }
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .phrase {
-      font-style: italic;
-      color: #0f0;
-    }
-    .formulario {
-      margin-top: 2rem;
-    }
-    input, textarea, button {
-      width: 100%;
-      margin: 0.5rem 0;
-      padding: 0.5rem;
-      border-radius: 5px;
-      border: none;
-    }
-    button {
-      background: #0ff;
+
+    .button {
+      background-color: #00ffcc;
       color: #000;
-      font-weight: bold;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px;
+      transition: background 0.3s;
     }
-    .paypal {
-      margin: 2rem 0;
-      text-align: center;
+
+    .button:hover {
+      background-color: #00ddaa;
     }
-    .anuncio {
-      background: #222;
-      border: 1px dashed #555;
-      text-align: center;
-      padding: 1rem;
-      margin: 2rem 0;
-      color: #aaa;
+
+    .paypal-button {
+      background-color: #0070ba;
+      color: white;
+    }
+
+    .paypal-button:hover {
+      background-color: #005c99;
     }
   </style>
 </head>
 <body>
-  <header>Red Viral: Memes & Frases</header>  <div class="container">
-    <div class="card">
-      <img src="https://i.imgflip.com/5k4u.jpg" alt="meme">
-      <p>Cuando haces una web viral desde tu cel...</p>
-    </div><div class="card">
-  <p class="phrase">"Si no te ríes, reinicias."</p>
-</div>
+  <h1>MimiRed</h1>
+  <p>Tu mini red de conexión rápida. ¡Gracias por visitarnos!</p>
 
-<div class="formulario">
-  <h3>Publica algo:</h3>
-  <input type="text" placeholder="Tu nombre">
-  <textarea rows="4" placeholder="Escribe tu frase o meme..."></textarea>
-  <button onclick="alert('¡Publicado! (simulado)')">Publicar</button>
-</div>
+  <button class="button" onclick="window.location.href='https://www.profitableratecpm.com/v6maqc8b?key=50a89101f90c29b2f837307d6687be74'">
+    Entrar
+  </button>
 
-<div class="paypal">
-  <h3>Apóyanos</h3>
-  <a href="https://www.paypal.com/donate" target="_blank">
-    <button>Donar por PayPal</button>
-  </a>
-</div>
-
-<div class="anuncio">
-  [Aquí irá tu anuncio cuando actives monetización]
-</div>
-
-  </div>
+  <form action="https://www.paypal.com/donate" method="post" target="_blank">
+    <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
+    <input type="hidden" name="business" value="kristianmemo756@gmail.com">
+    <input type="hidden" name="currency_code" value="USD">
+    <button type="submit" class="button paypal-button">Donar con PayPal</button>
+  </form>
 </body>
 </html>
